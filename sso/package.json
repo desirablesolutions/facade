@@ -1,5 +1,5 @@
 {
-  "name": "facade-sso-blackprint-template",
+  "name": "facade",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
