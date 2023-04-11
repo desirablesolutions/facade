@@ -1,9 +1,16 @@
 ---
+import Footer from "@includes/static/Footer/Footer.astro"
+import Meta from "@includes/static/Meta/Meta.astro"
+import NavBar from "@includes/dynamic/NavBar"
+import Container from "@includes/static/Container/Container.astro"
 ---
 
 <!DOCTYPE html>
 <html>
-  <body>
+  <Meta/>
+  <Container>
+    <NavBar/>
     <slot />
-  </body>
+    <Footer/>
+  </Container>
 </html>
