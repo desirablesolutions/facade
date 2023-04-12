@@ -6,6 +6,27 @@ import NavBar from "@includes/dynamic/NavBar";
 import Meta from "@includes/static/Meta/Meta.astro";
 import LeftVerticalMenu from "@includes/dynamic/LeftVerticalMenu";
 import Container from "@includes/static/Container/Container.astro";
+
+export const defaultProps = {
+  metaData: {
+    title: "Astro",
+    description:
+      "Astro is a new kind of static site generator. It’s a compiler for the modern web.",
+    image: "https://astro.build/assets/astro-logo.png",
+    url: "https://astro.build",
+    twitter: "@astrodotbuild",
+    twitterCard: "summary_large_image",
+    twitterSite: "@astrodotbuild",
+    twitterCreator: "@astrodotbuild",
+    twitterImageAlt: "Astro Logo",
+    ogType: "website",
+    ogLocale: "en_US",
+    ogSiteName: "Astro",
+    ogImageAlt: "Astro Logo",
+    ogImageWidth: "1200",
+    ogImageHeight: "630",
+  },
+};
 export interface Props {
   layout?: any;
 }
@@ -15,8 +36,7 @@ const { layout } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-  <Meta />
-
+  <Meta {...layout?.metaData ?? defaultProps.metaData} />
   <body>
     <div>
       <LeftVerticalMenu />

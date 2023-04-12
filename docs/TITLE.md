@@ -1,1 +1,1 @@
-<h1>Facade</h1>
+<h1 align="center">Facade</h1>
