@@ -1,1 +1,1 @@
-<h1 align="center">Facade</h1>
+<h1 align="center">Facade</h1>  <h3 align="center">📡 an intelligent, privacy-first, self-hosted CMS solution for managing web data streams and apps, for individuals and organizations alike.</h3>

@@ -1,20 +1,24 @@
 {
   "name": "facade-master",
   "version": "10.0.0",
-  "description": "",
+  "description": "📡 an intelligent, privacy-first, self-hosted CMS solution for managing web data streams and apps, for individuals and organizations alike",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "readme:g":"npx @appnest/readme generate --config=docs.config.json"
+    "readme:g": "npx @appnest/readme generate --config=docs.config.json",
+    "g:readme": "npx @appnest/readme generate --config=docs.config.json"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/facade-os/facade.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jeffrey Desir",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/facade-web/facade/issues"
   },
-  "homepage": "https://github.com/facade-web/facade#readme"
+  "homepage": "https://github.com/facade-web/facade#readme",
+  "dependencies": {
+    "blakprint": "^11.12.30"
+  }
 }
